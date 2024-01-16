@@ -4,7 +4,6 @@ const AiPart = () => {
   return (
     <>
       <Navbar />
-      Ai Part
       <div
         className="container-fluid"
         style={{ backgroundColor: "#FDECEC ", height: "100vh" }}
