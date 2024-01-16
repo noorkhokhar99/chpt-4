@@ -1,6 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import "../styles/Aipart.css";
+
 const AiPart = () => {
+  const [cameraStream, setCameraStream] = useState(null);
+
+  const handleUploadButtonClick = () => {
+    // Trigger the file input click event
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    fileInput.accept = "image/*";
+    fileInput.addEventListener("change", handleFileSelection);
+    fileInput.click();
+  };
+
+  const handleCameraButtonClick = () => {
+    // Open camera
+    navigator.mediaDevices
+      .getUserMedia({ video: true })
+      .then(handleCameraStream)
+      .catch(handleCameraError);
+  };
+
+  const handleFileSelection = (event) => {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+      // Handle the selected file (e.g., upload or process)
+      console.log("Selected file:", selectedFile);
+    }
+  };
+
+  const handleCameraStream = (stream) => {
+    // Handle camera stream
+    setCameraStream(stream);
+  };
+
+  const handleCameraError = (error) => {
+    // Handle camera error
+    console.error("Error accessing camera:", error);
+  };
   return (
     <>
       <Navbar />
@@ -59,6 +97,22 @@ const AiPart = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center mt-5">
+            <button
+              onClick={handleUploadButtonClick}
+              className="custom-button upload-button"
+            >
+              Upload Image or Browse Image
+            </button>
+            <button
+              onClick={handleCameraButtonClick}
+              className="custom-button camera-button"
+            >
+              Take Image from Camera
+            </button>
           </div>
         </div>
       </div>
