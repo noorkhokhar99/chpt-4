@@ -26,6 +26,29 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div
+        className="container-fluid"
+        style={{ backgroundColor: "#FDECEC ", height: "100vh" }}
+      >
+        <div className="row">
+          <div className="col-12">
+            <p className="text-center mt-5  ">
+              <h1 style={{ fontFamily: "initial" }}>How it works?</h1>
+            </p>
+            <div className="row">
+              <div className="col-3">
+                <div className="card">
+                  <h6>
+                    <i className="fas fa-upload"></i> <br /> Upload Image or{" "}
+                    <i className="fas fa-camera"></i> Capture Image
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
