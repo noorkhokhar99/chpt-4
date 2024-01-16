@@ -1,0 +1,9 @@
+streamlit
+pytesseract
+tesseract
+requests
+numpy
+opencv-python
+tesseract
+clarifai_grpc
+
