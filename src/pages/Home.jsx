@@ -26,7 +26,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid" style={{ backgroundColor: "#FDECEC ", height:"100vh"}}>
+      <div
+        className="container-fluid"
+        style={{ backgroundColor: "#FDECEC ", height: "100vh" }}
+      >
         <div className="row">
           <div className="col-12">
             <p className="text-center mt-5  ">
@@ -38,7 +41,7 @@ const Home = () => {
                   <h6>
                     <i className="fas fa-upload"></i> <br /> Upload Image or{" "}
                     <i className="fas fa-camera"></i> Capture Image
-                  </h6> 
+                  </h6>
                 </div>
               </div>
             </div>

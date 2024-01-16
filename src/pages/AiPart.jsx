@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import Navbar from "../components/Navbar";
 const AiPart = () => {
   return (
     <>
-    <Navbar />
-    Ai Part
+      <Navbar />
+      Ai Part
     </>
-  )
-}
+  );
+};
 
-export default AiPart
+export default AiPart;
