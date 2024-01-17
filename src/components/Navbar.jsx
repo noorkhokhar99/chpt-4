@@ -66,6 +66,17 @@ const Navbar = () => {
                     </a>
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link to="/crop" style={{ textDecoration: "none" }}>
+                    <a
+                      className="nav-link active"
+                      href="#"
+                      style={{ fontWeight: "bolder", textDecoration: "none" }}
+                    >
+                     Demo
+                    </a>
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>
