@@ -77,6 +77,17 @@ const Navbar = () => {
                     </a>
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link to="/team" style={{ textDecoration: "none" }}>
+                    <a
+                      className="nav-link active"
+                      href="#"
+                      style={{ fontWeight: "bolder", textDecoration: "none" }}
+                    >
+                     Our Team
+                    </a>
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>
